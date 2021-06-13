@@ -271,7 +271,7 @@ ul {
   margin-top: -30px;
   margin-left: -30px;
 }
-.workList a {
+.workList .workLink {
   display: block;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -298,10 +298,16 @@ ul {
   margin-top: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.workList .item-portfolio:hover .text-over,
-.workList .item-portfolio:hover {
+.workList a:hover .text-over,
+.workList a:focus .text-over 
+{
   box-shadow: 0px 9px 17px 1px rgba(0, 0, 0, 0.54);
   transform: translateY(0);
+}
+.workList a:hover .portfolio,
+.workList a:focus .portfolio 
+{
+  box-shadow: 0px 9px 17px 1px rgba(0, 0, 0, 0.54);
 }
 .workList .title {
   color: var(--secondary-text-color);
